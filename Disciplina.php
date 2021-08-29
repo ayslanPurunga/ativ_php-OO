@@ -13,7 +13,7 @@ class Disciplina
 
     public function verDisciplina()
     {
-        return "{$this->nome} - {$this->creditos} créditos -".self::$ministrada;
+        return "{$this->nome} ({$this->codigo}) - {$this->creditos} créditos -".self::$ministrada;
     }
 
     public function getCodigo()
@@ -25,6 +25,8 @@ class Disciplina
     {
         if(strlen($codigoDisciplina) > 3){
             $this->codigo = $codigoDisciplina;
+        } else {
+            $this->codigo = 0;
         }
     }
     

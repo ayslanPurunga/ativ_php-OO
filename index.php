@@ -76,7 +76,7 @@ ini_set('display_errors', 1);
     <?php
     $disciplinaMatematica = new Disciplina();
     $disciplinaMatematica->nome = 'Matematica';
-    $disciplinaMatematica->setCodigo('MAT');
+    $disciplinaMatematica->setCodigo('MATI');
     $disciplinaMatematica->creditos = '4';
     Disciplina::ministrarDisciplina();
     $matematica = $disciplinaMatematica->verDisciplina();
